@@ -99,7 +99,7 @@ img.avatar {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 30%; /* Could be more or less, depending on screen size */
     display: none; /* Hidden by default */
@@ -197,4 +197,37 @@ h2 {
 
 .user {
   display: none;
+}
+
+@media (min-width: 0) and (max-width: 908px) {
+	.modal-content {
+    width: 80%;
+    min-width: 300px;
+  }
+
+  .card {
+    max-width: 100%;
+    min-width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .all {
+      width: 100%;
+      display: block;
+  }
+
+  h1 {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  body{
+    margin-left: 10px;
+  }
+
 }
