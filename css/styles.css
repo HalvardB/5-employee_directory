@@ -1,0 +1,200 @@
+body{
+  background-color: #e1f1f6;
+  font-family: Helvetica, sans-serif;
+  color: #222;
+  margin-left: 40px;
+}
+
+.all {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-gap: 45px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+  border: 3px solid grey;
+  height: 200px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  border: 3px solid rgb(49, 140, 247);
+  cursor: pointer;
+  background-color: white;
+}
+
+.profilePicture{
+  border-radius: 50%;
+  float: left;
+  margin: 1em;
+}
+
+.info {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.name{
+  margin-top: 3em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+}
+
+.mail, .city, .phone, .adress, .birthday, .username {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.name, .city, .adress {
+  text-transform: capitalize;
+}
+
+.allmodals {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    display: none; /* Hidden by default */
+}
+
+.imgcontainer {
+    text-align: center;
+    padding: 30px 0 12px 0;
+    position: relative;
+    border-radius: 50%;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.textcontainer1, .textcontainer2 {
+  text-align: center;
+}
+
+.textcontainer1{
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.textcontainer2{
+  padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    display: none; /* Hidden by default */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(49, 140, 247);
+    cursor: pointer;
+}
+
+.prev {
+  float: left;
+}
+
+.prev:hover{
+    cursor: pointer;
+    color: rgb(49, 140, 247);
+}
+
+.next {
+  float: right;
+}
+
+.next:hover{
+    cursor: pointer;
+    color: rgb(49, 140, 247);
+}
+
+.prev, .next {
+  margin-top: 50%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.sorry {
+  text-align: center;
+}
+
+.sorryImg {
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+#search {
+  margin-bottom: 30px;
+  font-size:10pt;
+  height:20px;
+  width:250px;
+  padding: 8px 15px;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+#search:focus {
+  border: 3px solid rgb(49, 140, 247);
+  outline: none;
+}
+
+.user {
+  display: none;
+}
